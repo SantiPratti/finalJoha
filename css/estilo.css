@@ -1,0 +1,643 @@
+@import url('https://fonts.cdnfonts.com/css/open-sans');
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0!important;
+    padding: 0!important;
+    background-color: #cbcbcb;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0,003em;/*Espacio entre las letras*/
+    line-height: 1.6;/*Alinicion de los textos*/    
+}
+.texto-desktop {
+    display: inline;
+}
+.texto-movil {
+    display: none;
+}
+header{
+    height: 94px;
+    background: #91202a;
+    padding:  0 20px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-right-radius: 12px ;
+    border-bottom-left-radius: 12px;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+        
+}
+
+.logo1{
+    width: 55px;
+    height: auto;
+    margin-right: 10px; 
+}
+
+.logo-title{
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    font-family: inherit;
+    font-weight: 900;
+}
+
+.menu a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0,4s;
+}
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0,4s;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: rgb(166, 243, 243);
+} 
+
+.noticias-colum{
+    display: flex;
+    flex-direction: column;
+}
+
+#check{
+    display: none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo1{
+    width: 55px;
+    height: auto;
+    margin-right: 10px;
+}
+.logo-title{
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    font-family: inherit;
+    font-weight: 900;
+}
+.menu a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0,4s;
+}
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0,4s;
+}
+.mostrar-menu{
+    order: 1;
+}
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: rgb(166, 243, 243);
+} 
+.noticias-colum{
+    display: flex;
+    flex-direction: column;
+}
+#check{
+    display: none;
+}
+.seccion_new{
+     /* width: 100%; */
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     padding: 0 80px;/*El 1 nro es para arriba y abajo. El 2 nro es para los costados*/
+     margin-top: -18px;
+     margin-block-end: 0px;
+}
+.title{
+    text-align: center;
+    font-size: 50px;/*tamaño fuente*/
+    color: rgb(0, 0, 0);/* color de la letra*/
+    margin-top: 50px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.card {
+    border: 1px solid #ddd; /* Borde suave */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    overflow: hidden;
+    background-color: #fff; /* Fondo blanco para destacar */
+    padding: 16px;
+}
+.card h4 {
+    margin-top: 8px;
+    color: #91202a; /* Resalta el color del club */
+}
+
+.card p {
+    margin: 8px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*tamaño de las tarjetas de noticias*/
+.seccion_new .card{
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 3fr max-content;
+    grid-template-areas: 'img texto';
+}
+.seccion_new hr{
+    background-color: rgb(65, 65, 65);
+    width: 100%;
+    height: 3px;
+}
+/*Columnas card*/
+.seccion_new .card .col-at-img{
+    grid-area: img;
+}
+.seccion_new .card .col-at-texto{
+    grid-area: texto;
+}
+/*tamaño y lugar de las imagenes*/
+.seccion_new .card img{
+    width: 100%;
+    height: auto;
+}
+.seccion_new .card h4{
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: -1.5px;
+    margin-bottom: -10px;
+}
+.seccion_new .card p{
+    padding: 0 1rem;
+    font-size: 20px;
+    font-weight: 300;
+}
+/* tarjetas */
+.event-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    
+  }
+  hr {
+    background-color: white;
+    width: 80%;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+  }
+  
+  
+  /* Contenedor para centrar el formulario */
+  .form-container {
+    top: 0;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+h1{
+    text-align: center;
+}
+/*formulario*/
+form {
+    top: 0;
+    display: flex; 
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra horizontalmente los elementos del formulario */
+    padding: 20px;
+    background-color: #91202a; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-element {
+    margin: 10px 0; 
+    width: 100%;
+  }
+  input {
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    max-width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button {
+    border: 0;
+    border-radius: 10px;
+    background: #ce6d72;
+    font-size: 15px;
+    padding: 10px;
+    margin: 3px;
+    cursor: pointer;
+    
+    box-sizing: border-box;
+  }
+  button:hover {
+    background: #001F3F;
+  }
+  
+  label {
+    padding: 10px;
+    margin: 3px;
+    max-width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+    color: azure;
+  }
+  /* Footer */
+  footer {
+    background-color: #861620;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Reduce el padding para hacer el footer más bajo */
+    margin-top: auto; /* Empuja el footer hacia abajo */
+  }
+  
+  .footer-text {
+    color: azure;
+    font-size: 0.9rem; /* Ajusta el tamaño de la fuente si es necesario */
+  }
+  
+  .footer-icons {
+    display: flex;
+  }
+  
+  
+  .footer-icons img {
+    padding: 10px; /* Reduce el espacio alrededor de los iconos */
+    height: 35px; /* Reduce el tamaño de los iconos */
+    width: 35px;
+  }
+  
+  .contact-content {
+    padding: 20px;
+  }
+
+/*DEPORTES - TARJETAS*/
+
+.seccion_new .card_deportes{
+    width: 330px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); /*Es para darle sombriado al bloque*/
+    overflow: hidden; /*Le da forma a la tarjeta*/
+    margin: 20px;
+    text-align: center;
+    transition: all 0,25s;/*Es para darle movimiento a la tarjeta*/
+    position: relative;
+    
+}
+
+/*CON EL HOVER HACEMOS EL MOVIMIENTO DE LA TARJETA*/
+.seccion_new .card_deportes:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+/*TAMAÃ‘O Y LUGAR DE LAS IMAGENTES*/
+.seccion_new .card_deportes img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.seccion_new .card_deportes h3{
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    font-size: 30px;
+    position: absolute;
+    color: rgb(253, 255, 255);
+    top: -30px;
+    background: rgba(35, 47, 53, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*transform: translate(50%, 50%);*/
+}
+.seccion_new .card_deportes a{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    text-decoration: none;
+    position: absolute;
+    color: rgb(252, 251, 251);
+    top: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /*transform: translate(50%, 50%);*/
+}
+
+.seccion_new .card_deportes a:hover{
+    text-decoration: underline;
+
+}
+
+
+
+/*INFORMACION DE CADA DEPORTE*/
+.info_deportes{
+    margin: 30px;
+    color: #0c0c0c;
+    margin-top: 80px;
+    overflow: auto;
+}
+
+.info_deportes h2{
+    font-size: 30px;
+}
+
+.info_deportes hr{
+    margin-top: -15px; 
+    margin-inline-end: 12px;
+    width: 100%;
+}
+
+.info_deportes .tabla_dep td,th{
+    border: 1px solid rgb(10, 10, 10);
+}
+
+.info_deportes .tabla_dep a{
+    color: rgb(12, 12, 12);
+    text-decoration: none;
+}
+
+.info_deportes .tabla_dep a:hover{
+    text-decoration: underline;
+    color: #0a0a0a;
+}
+
+/* SOBRE NOSOTROS */
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px ;
+
+ }
+ 
+ .contenido .card{
+    width: 100%;
+    height: auto;
+    /* margin-top: 8px; */
+    color: rgb(17, 17, 17);
+}
+
+/*TAMAÃ‘O Y LUGAR DE LAS IMAGENTES*/
+
+.contenido .card h4{
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: -1.5px;
+    margin-bottom: -10px;
+}
+
+.contenido .card p{
+    font-size: 20px;
+    font-weight: 300;
+}
+/*RESPONSIVE*/
+@media screen and (max-width: 980px){
+
+    /*HEADER - menu*/
+
+    
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+        margin-right: 0px;
+    }
+    
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background: rgb(24, 22, 22);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0,4s;
+        border-radius: 12px;
+    }
+
+    .menu a{
+        display: block;
+        padding: 15px;
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    
+    #check:checked~.menu{
+        right: 0;
+    }
+
+    .logo1{
+        width: 45px;
+        height: auto;
+        
+    }
+    .logo-title{
+        font-size: 22px;
+    }
+    /* NOTICIAS - NEW */
+    .seccion_new .card{
+        grid-template-areas: 'img'
+                             'texto';
+    }
+
+
+    /*TABLA - INFO DEPORTES*/
+    .info_deportes{
+        /* margin-top: 190px; */
+        margin-inline-start: 10px;
+    }
+    
+    .info_deportes .tabla_dep{
+        width: 600px;
+    }
+
+    .info_deportes .tabla_dep td,th{
+        border: 1px solid white;
+    }
+    /*SOBRE NOSOTROS*/
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 70px ;
+    
+     }
+    
+}
+
+@media screen and (max-width: 600px){
+    
+    .texto-desktop {
+        display: none; /* Oculta el texto completo */
+    }
+    .texto-movil {
+        display: inline; /* Muestra el texto abreviado */
+    }
+    /*HEADER - menu*/
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+        margin-right: 0px;
+
+    }
+
+    /*FUNCIONES*/
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background: #91202a;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 70px 0px;
+        z-index: 100;
+        transition: 0,4s;
+        border-radius: 12px;
+    }
+
+    .menu a{
+        display: block;
+        padding: 15px;
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 14px;
+        right: 20px;
+    }
+    
+    #check:checked~.menu{
+        right: 0;
+    }
+
+    .logo1{
+        width: 30px;
+        height: auto;
+    }
+    .logo-title{
+        font-size: 22px;
+        padding-right: 170px;
+
+    }
+
+    /* NOTICIAS - NEW */
+    .title{
+        margin-top: 20px;
+    }
+
+    .seccion_new {
+        padding: 0 30px;    
+    }
+    .seccion_new hr{
+        margin-top: 30px;
+    }
+    
+
+    
+    /*TABLA - INFO DEPORTES*/
+    .seccion_new .card_deportes h3{
+        font-weight: 400;
+        font-size: 26px;
+        top:-26px;
+    }
+    /* .info_deportes{
+        margin-top: 170px;
+        margin-inline-start: 10px; 
+    }*/
+
+    .info_deportes .tabla_dep{
+        width: 500px;
+    }
+
+    .info_deportes .tabla_dep td,th{
+        border: 1px solid white;
+    }
+    .info_deportes hr{
+        display: none;
+    }
+
+    /*SOBRE NOSOTROS*/
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px ;
+    
+     }
+     /*MENSAJE ENVIADO*/
+     .msj-enviado .msj img{
+        width: 120px;
+        height: auto;
+    }
+
+    /* Formulario de contacto */
+    .formulario input, select{
+        margin: 6px;
+        font-size: 12px;
+    }
+    .formulario .boton{
+        font-size: 12px;
+    }
+
+ 
+}
